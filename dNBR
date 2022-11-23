@@ -276,7 +276,7 @@ for (var i = 0; i < 8; i++) {
   legend.add(makeRow(palette[i], names[i]));
   }  
  
-// add legend to map (alternatively you can also print the legend to the console)
+// add legend to map
 Map.add(legend);
 
 
