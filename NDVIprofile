@@ -26,7 +26,6 @@ var startYear = 1985;
 var endYear = 2020;
 var startDay = '06-20';
 var endDay = '09-20';
-//var aoi = ee.Geometry.Point(-122.8848, 43.7929);
 var bandList = ['NDVI'];
 
 // center and zoom the display in case outputs are to be mapped 
