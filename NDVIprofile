@@ -34,7 +34,7 @@ Map.addLayer(aoi)
 // build annual surface reflectance collection (cloud and shadow masked medoid composite)
 var annualSRcollection = ltgee.buildSRcollection(startYear, endYear, startDay, endDay, aoi);
 
-var clip = (function(img) { return img.clip(geometry); }); //Function definition to clip imabe by perimeter
+var clip = (function(img) { return img.clip(geometry); }); //Function definition to clip image by perimeter
 
 // transform the annual surface reflectance bands to whatever is in the bandList variable
 var indexCollection = ltgee.transformSRcollection(annualSRcollection, bandList).map(clip);
