@@ -24,7 +24,7 @@
 // Visit https://developers.google.com/earth-engine/datasets to see all available datasets
 // We select MCD64A1.006 MODIS Burned Area Monthly Global 500m
 // We should visit product information page: 
-// https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD64A1#description
+// https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD64A1#description
 var dataset = ee.ImageCollection('MODIS/006/MCD64A1')
                   .filter(ee.Filter.date('2019-01-01', '2019-12-01'));
 var burnedArea = dataset.select('BurnDate');
